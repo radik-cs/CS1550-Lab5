@@ -417,7 +417,7 @@ bmap(struct inode *ip, uint bn)
     brelse(bp);
     return addr;
   }
-  
+
   panic("bmap: out of range");
 }
 
@@ -690,4 +690,3 @@ nameiparent(char *path, char *name)
 {
   return namex(path, 1, name);
 }
-
